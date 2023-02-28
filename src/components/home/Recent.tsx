@@ -61,7 +61,7 @@ const Recent = () => {
       </div>
       <div
         id="recent-purchase"
-        className="pt-20 flex flex-wrap justify-center gap-[7px] "
+        className="pt-20 flex flex-wrap justify-center gap-5"
       >
         {purchases.map((purchase, idx) => {
           const { name, type, coin, dollar, imgUrl, verified } = purchase;
