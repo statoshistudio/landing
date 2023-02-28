@@ -211,7 +211,7 @@ const Footer = () => {
                 <p data-animate className="text-sm text-[#B9B8BB] mt-5">
                   To stay updated with our latest news and updates
                 </p>
-                <div className="mt-6 flex flex-wrap gap-3">
+                <div className="mt-6 flex justify-center flex-wrap gap-3">
                   <Link href="">
                     <div
                       data-animate

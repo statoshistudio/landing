@@ -49,7 +49,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="font-dm-sans pt-20 lg:mt-10 relative mx-[6%]">
+    <div className="font-dm-sans pt-5 md:pt-20 lg:mt-10 relative mx-[6%]">
       <div className="absolute top-0 left-0 w-full h-[90%] -z-0 hidden lg:block">
         <div className="relative h-full w-[90%] 2xl:w-[76%] -z-0 mx-auto">
           <Image

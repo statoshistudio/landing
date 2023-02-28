@@ -48,14 +48,14 @@ const Evms = () => {
           <div
             data-animate
             key={index}
-            className="flex-1 px-4 py-[34px] cursor-pointer border border-transparent hover:border-primary duration-300 flex items-center gap-2.5 rounded-xl bg-gradient-to-t to-[#70707266] from-[#64617126]"
+            className="max-w-full flex-1 px-4 py-[34px] cursor-pointer border border-transparent hover:border-primary duration-300 flex items-center gap-2.5 rounded-xl bg-gradient-to-t to-[#70707266] from-[#64617126]"
           >
-            <div className="w-[50px] h-[50px] relative bg-[#565660] rounded-full">
+            <div className="min-w-[40px] min-h-[40px] sm:w-[50px] sm:h-[50px] relative bg-[#565660] rounded-full">
               <BlueStar className="absolute -bottom-1 -right-1" />
             </div>
             <div className="">
               <h4 className="font-bold">{collection.title}</h4>
-              <p className="text-xs font-medium mt-1">
+              <p className="text-xs font-medium mt-1 whitespace-normal break-all">
                 {collection.cryptoAddress}
               </p>
             </div>
