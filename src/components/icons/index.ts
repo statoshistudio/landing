@@ -1,0 +1,23 @@
+export { default as Fire } from './Fire';
+export { default as Moon } from './Moon';
+export { default as Etherium } from './Etherium';
+export { default as Pointer } from './Pointer';
+export { default as Functional } from './Functional';
+export { default as Chain } from './Chain';
+export { default as Star } from './Star';
+export { default as Heart } from './Heart';
+export { default as Folder } from './Folder';
+export { default as Connect } from './Link';
+export { default as Wallet } from './Wallet';
+export { default as Trade } from './Claim';
+export { default as Arrow } from './Arrow';
+export { default as BlueStar } from './BlueStar';
+export { default as Etherium2 } from './Etherium2';
+export { default as Heart2 } from './Heart2';
+//Footer icons
+export { default as Twitter } from './Twitter';
+export { default as Facebook } from './Facebook';
+export { default as Telegram } from './Telegram';
+export { default as Youtube } from './Youtube';
+export { default as Tiktok } from './Tiktok';
+export { default as Discord } from './Discord';
