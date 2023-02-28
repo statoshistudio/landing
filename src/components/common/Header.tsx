@@ -1,9 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { Fire, Moon } from '../icons';
+import { useMediaQuery } from 'react-responsive';
+import { Fire, Menu, Moon } from '../icons';
+import dynamic from 'next/dynamic';
+const Drawer = dynamic(() => import('react-modern-drawer'), { ssr: false });
 
 const Header = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
   return (
     <div className="font-dm-sans">
       <div className="px-[3%] xl:px-[7%] 2xl:px-[10%] py-4 md:py-8 flex items-center justify-between">
@@ -15,6 +22,12 @@ const Header = () => {
             </h3>
           </div>
         </Link>
+        <button
+          onClick={toggleDrawer}
+          className="text-white text-4xl -translate-y-1 sm:-translate-y-3 lg:hidden"
+        >
+          <Menu />
+        </button>
         <div className="hidden lg:flex items-center gap-9 xl:gap-12">
           <nav className="hidden md:block">
             <ul className="flex items-center gap-3 md:gap-5 xl:gap-10 text-white">
@@ -58,6 +71,60 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Drawer open={isOpen} onClose={toggleDrawer} direction="left">
+        <div className="p-5 bg-[#1F1F2C] min-h-full text-white/80">
+          <div className="flex items-center gap-3">
+            <button className="font-bold text-white py-3 px-10 xl:px-[62px] rounded-full border border-primary bg-[#1F1F2CE5] hover:text-primary duration-300">
+              Connect
+            </button>
+            <div className="group rounded-full border bg-[#1F1F2C] border-[#28303F] hover:border-primary duration-300 px-3 py-3 cursor-pointer">
+              <Moon className="text-[#B9B8BB] group-hover:text-primary duration-300" />
+            </div>
+          </div>
+          <div className="mt-5">
+            <Link href={'/'}>
+              <div className="flex items-center pr-2">
+                <Image
+                  src={'/img/ui/logo.png'}
+                  width={60}
+                  height={60}
+                  alt="logo"
+                />
+                <h3 className="text-[28px] xl:text-[32px] text-white font-engagement">
+                  Satoshi Studio
+                </h3>
+              </div>
+            </Link>
+          </div>
+          <ul onClick={toggleDrawer} className="mt-5 text-lg space-y-2">
+            <li className="px-2 hover:text-primary">
+              <Link scroll={false} href={'#marketplace'}>
+                Marketplace
+              </Link>
+            </li>
+            <li className="px-2 hover:text-primary">
+              <Link scroll={false} href={'#claim'}>
+                Claim
+              </Link>
+            </li>
+            <li className="px-2 hover:text-primary">
+              <Link scroll={false} href={'#claim'}>
+                Create
+              </Link>
+            </li>
+            <li className="px-2 hover:text-primary">
+              <Link scroll={false} href={'/#github'}>
+                Github
+              </Link>
+            </li>
+            <li className="px-2 hover:text-primary">
+              <Link scroll={false} href={'/#ultra_litepaper'}>
+                Ultra litepaper
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </Drawer>
     </div>
   );
 };

@@ -14,6 +14,7 @@ export { default as Arrow } from './Arrow';
 export { default as BlueStar } from './BlueStar';
 export { default as Etherium2 } from './Etherium2';
 export { default as Heart2 } from './Heart2';
+export { default as Menu } from './Menu';
 //Footer icons
 export { default as Twitter } from './Twitter';
 export { default as Facebook } from './Facebook';
