@@ -71,26 +71,27 @@ const Hero = () => {
           pagination={{ clickable: true }}
           className="select-none 2xl:h-[calc(100vh-320px)]"
         >
-          <SwiperSlide className="w-full flex">
-            <div className="lg:w-[42%]">
-              <h1
-                id="hero-title"
-                className="mt-5 lg:mt-24 font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
-              >
-                Bringing Value Art To{' '}
-                <span className="text-primary">Bitcoin</span>, the most secure
-                and decentralized Blockchain network
-              </h1>
-              <div className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer">
-                <div className="pr-7 sm:pr-[33px] py-2">
-                  <Etherium />
+          <SwiperSlide>
+            <div className="w-full lg:flex">
+              <div className="lg:w-[42%]">
+                <h1
+                  id="hero-title"
+                  className="mt-5 lg:mt-24 font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
+                >
+                  Bringing Value Art To{' '}
+                  <span className="text-primary">Bitcoin</span>, the most secure
+                  and decentralized Blockchain network
+                </h1>
+                <div className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer">
+                  <div className="pr-7 sm:pr-[33px] py-2">
+                    <Etherium />
+                  </div>
+                  <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0">
+                    Claim Ordinal Copies of your Ethereum NFTs
+                  </p>
                 </div>
-                <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0">
-                  Claim Ordinal Copies of your Ethereum NFTs
-                </p>
               </div>
-            </div>
-            {/* <div className=" lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-[23px] gap-y-[30px] mt-20 lg:mt-0">
+              {/* <div className=" lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-[23px] gap-y-[30px] mt-20 lg:mt-0">
               {networks.map((network, idx) => {
                 const { name, number, price, imgUrl, love } = network;
                 return (
@@ -128,64 +129,68 @@ const Hero = () => {
                 );
               })}
             </div> */}
-            <div className="relative lg:flex-1 hidden lg:block w-full min-h-[220px] 2xl:min-h-full">
-              <Image src={'/img/slide-1.png'} fill alt="image" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="w-full min-h-full lg:flex gap-14 2xl:gap-[65px]">
-            <div className="lg:w-[40%] min-h-full">
-              <h1
-                id="hero-title"
-                className="lg:w-[636px] mt-5 2xl:mt-20 font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
-              >
-                Satoshi Studio{' '}
-                <span className="text-primary">
-                  Creator Partnership Program
-                </span>
-              </h1>
-              <p className="px-5 text-center text-lg lg:text-3xl font-dm-sans font-normal text-[#B9B8BB] mt-10">
-                Rewards Creators & Owners of NFT Collections across Multiple
-                Blockchains
-              </p>
-              <div
-                id="hero-button"
-                className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer"
-              >
-                <div className="pr-7 sm:pr-[33px] py-2">
-                  <Etherium />
-                </div>
-                <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0 lg:pl-5">
-                  Verify Your Collection Now
-                </p>
+              <div className="relative lg:flex-1 hidden lg:block w-full min-h-[220px] 2xl:min-h-full">
+                <Image src={'/img/slide-1.png'} fill alt="image" />
               </div>
             </div>
-            <div className="relative lg:flex-1 hidden lg:block w-full min-h-[220px] 2xl:min-h-full">
-              <Image src={'/img/slide-2.png'} fill alt="image" />
-            </div>
           </SwiperSlide>
-          <SwiperSlide className="w-full lg:flex">
-            <div className="lg:w-[42%]">
-              <h1
-                id="hero-title"
-                className="mt-5 lg:mt-24 font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
-              >
-                Bringing Value Art To{' '}
-                <span className="text-primary">Bitcoin</span>, the most secure
-                and decentralized Blockchain network
-              </h1>
-              <div
-                id="hero-button"
-                className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer"
-              >
-                <div className="pr-7 sm:pr-[33px] py-2">
-                  <Etherium />
-                </div>
-                <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0">
-                  Claim Ordinal Copies of your Ethereum NFTs
+          <SwiperSlide>
+            <div className="w-full min-h-full lg:flex gap-14 2xl:gap-[65px]">
+              <div className="lg:w-[40%] min-h-full">
+                <h1
+                  id="hero-title"
+                  className="lg:w-[636px] mt-5 2xl:mt-20 font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
+                >
+                  Satoshi Studio{' '}
+                  <span className="text-primary">
+                    Creator Partnership Program
+                  </span>
+                </h1>
+                <p className="px-5 text-center text-lg lg:text-3xl font-dm-sans font-normal text-[#B9B8BB] mt-10">
+                  Rewards Creators & Owners of NFT Collections across Multiple
+                  Blockchains
                 </p>
+                <div
+                  id="hero-button"
+                  className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer"
+                >
+                  <div className="pr-7 sm:pr-[33px] py-2">
+                    <Etherium />
+                  </div>
+                  <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0 lg:pl-5">
+                    Verify Your Collection Now
+                  </p>
+                </div>
+              </div>
+              <div className="relative lg:flex-1 hidden lg:block w-full min-h-[220px] 2xl:min-h-full">
+                <Image src={'/img/slide-2.png'} fill alt="image" />
               </div>
             </div>
-            {/* <div className=" lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-[23px] gap-y-[30px] mt-20 lg:mt-0">
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full lg:flex">
+              <div className="lg:w-[42%]">
+                <h1
+                  id="hero-title"
+                  className="mt-5 lg:mt-24 font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
+                >
+                  Bringing Value Art To{' '}
+                  <span className="text-primary">Bitcoin</span>, the most secure
+                  and decentralized Blockchain network
+                </h1>
+                <div
+                  id="hero-button"
+                  className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer"
+                >
+                  <div className="pr-7 sm:pr-[33px] py-2">
+                    <Etherium />
+                  </div>
+                  <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0">
+                    Claim Ordinal Copies of your Ethereum NFTs
+                  </p>
+                </div>
+              </div>
+              {/* <div className=" lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-[23px] gap-y-[30px] mt-20 lg:mt-0">
               {networks.map((network, idx) => {
                 const { name, number, price, imgUrl, love } = network;
                 return (
@@ -223,8 +228,9 @@ const Hero = () => {
                 );
               })}
             </div> */}
-            <div className="relative flex-1 w-full min-h-full">
-              <Image src={'/img/slide-1.png'} fill alt="image" />
+              <div className="relative lg:flex-1 w-full min-h-full">
+                <Image src={'/img/slide-1.png'} fill alt="image" />
+              </div>
             </div>
           </SwiperSlide>
         </Swiper>
