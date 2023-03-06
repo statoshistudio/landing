@@ -4,6 +4,7 @@ import React from 'react';
 import {
   Discord,
   Facebook,
+  Instagram,
   Telegram,
   Tiktok,
   Twitter,
@@ -48,6 +49,9 @@ const Footer = () => {
               Adding value to the Bitcoin network through social innovation and
               art
             </p>
+            <button className="bg-primary lg:block rounded-full w-[202px] h-[49px] text-xl text-white uppercase font-bold font-dm-sans mt-7 hover:bg-opacity-80 transition-all duration-200 ease-in-out">
+              donate
+            </button>
           </div>
           <div className="flex-grow flex flex-wrap xl:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -121,7 +125,7 @@ const Footer = () => {
                     href=""
                     className="text-[#B9B8BB] hover:text-opacity-80"
                   >
-                    Support
+                    Donate
                   </Link>
                 </li>
                 <li data-animate>
@@ -212,7 +216,11 @@ const Footer = () => {
                   To stay updated with our latest news and updates
                 </p>
                 <div className="mt-6 flex justify-center flex-wrap gap-3">
-                  <Link href="">
+                  <Link
+                    href="https://twitter.com/satoshisnft"
+                    passHref
+                    target={'_blank'}
+                  >
                     <div
                       data-animate
                       className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
@@ -220,15 +228,31 @@ const Footer = () => {
                       <Twitter />
                     </div>
                   </Link>
-                  <Link href="">
+                  <Link
+                    href="https://instagram.com/satoshistudio?igshid=YmMyMTA2M2Y="
+                    passHref
+                    target={'_blank'}
+                  >
+                    <div
+                      data-animate
+                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
+                    >
+                      <Instagram />
+                    </div>
+                  </Link>
+                  {/* <Link href="">
                     <div
                       data-animate
                       className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
                     >
                       <Facebook />
                     </div>
-                  </Link>
-                  <Link href="">
+                  </Link> */}
+                  <Link
+                    href="https://t.me/SatoshiStudioAnnounce"
+                    target={'_blank'}
+                    passHref
+                  >
                     <div
                       data-animate
                       className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
@@ -236,14 +260,14 @@ const Footer = () => {
                       <Telegram />
                     </div>
                   </Link>
-                  <Link href="">
+                  {/* <Link href="">
                     <div
                       data-animate
                       className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
                     >
                       <Youtube />
                     </div>
-                  </Link>
+                  </Link> */}
                   <Link href="">
                     <div
                       data-animate
@@ -252,7 +276,11 @@ const Footer = () => {
                       <Tiktok />
                     </div>
                   </Link>
-                  <Link href="">
+                  <Link
+                    href="https://discord.gg/Zy7nnQCK"
+                    target={'_blank'}
+                    passHref
+                  >
                     <div
                       data-animate
                       className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"

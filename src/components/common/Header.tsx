@@ -44,10 +44,39 @@ const Header = () => {
                   Claim <Fire className="ml-1" />
                 </Link>
               </li>
-              <li className="px-2">
-                <Link className="hover:text-primary duration-300" href={'/'}>
+              <li className="relative group px-2 border-2 border-[#B04242] rounded-full">
+                <Link
+                  className="group-hover:text-primary duration-300"
+                  href={'/'}
+                >
                   Create
                 </Link>
+                <ul className="absolute top-full group-hover:block hidden whitespace-nowrap">
+                  <li className="mt-2">
+                    <Link
+                      className="font-dm-sans hover:text-primary"
+                      href={'#'}
+                    >
+                      Inscribe New Ordinal
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      className="font-dm-sans hover:text-primary"
+                      href={'#'}
+                    >
+                      Launch Collection
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      className="font-dm-sans hover:text-primary"
+                      href={'#'}
+                    >
+                      Creator Partnership Program
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="px-2">
                 <Link className="hover:text-primary duration-300" href={'/'}>

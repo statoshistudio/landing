@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
+import { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Chain, Etherium, Functional, Heart, Pointer, Star } from '../icons';
 
 const Hero = () => {
@@ -60,63 +62,172 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div
-        id="hero"
-        className="lg:flex gap-14 2xl:gap-[65px] xl:px-[7%] 2xl:px-[10%] pt-12 relative z-30"
-      >
-        <div className="lg:w-[46%]">
-          <h1
-            id="hero-title"
-            className="font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
-          >
-            Bringing Value Art To <span className="text-primary">Bitcoin</span>,
-            the most secure and decentralized Blockchain network
-          </h1>
-          <div
-            id="hero-button"
-            className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer"
-          >
-            <div className="pr-7 sm:pr-[33px] py-2">
-              <Etherium />
-            </div>
-            <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0">
-              Claim Ordinal Copies of your Ethereum NFTs
-            </p>
-          </div>
-        </div>
-        <div className=" lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-[23px] gap-y-[30px] mt-20 lg:mt-0">
-          {networks.map((network, idx) => {
-            const { name, number, price, imgUrl, love } = network;
-            return (
-              <div
-                key={idx}
-                data-animate
-                className="rounded-3xl overflow-hidden bg-[#2A35474D] max-h-[251px] max-w-[210px] xl:max-w-full"
+      <div id="hero" className="xl:px-[4%] 2xl:px-[9%] relative z-30">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={50}
+          slidesPerView={1}
+          // navigation
+          pagination={{ clickable: true }}
+          className="select-none 2xl:h-[calc(100vh-320px)]"
+        >
+          <SwiperSlide className="w-full flex">
+            <div className="lg:w-[42%]">
+              <h1
+                id="hero-title"
+                className="mt-5 lg:mt-24 font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
               >
-                <div className="relative">
-                  <Image src={imgUrl} width={265} height={190} alt="image" />
-                  <div className="group w-[38px] h-[17px] absolute top-2 right-3 rounded-full bg-[#2F2F3433] px-2.5 py-1 flex items-center cursor-pointer border border-transparent hover:border-primary">
-                    <Heart className="group-hover:text-primary text-white" />{' '}
-                    <span className="text-[8.5px] mt-0.5 ml-0.5 group-hover:text-primary text-white">
-                      {love}
-                    </span>
-                  </div>
+                Bringing Value Art To{' '}
+                <span className="text-primary">Bitcoin</span>, the most secure
+                and decentralized Blockchain network
+              </h1>
+              <div className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer">
+                <div className="pr-7 sm:pr-[33px] py-2">
+                  <Etherium />
                 </div>
-                <div className="pt-3 pb-6 mx-2 xl:mx-3.5 text-white">
-                  <h5 className="text-center text-xs ">{name}</h5>
-                  <div className="mt-2 flex items-center justify-between">
-                    <p className="text-sm font-medium xl:font-bold">
-                      #{number}
-                    </p>
-                    <p className="text-sm font-medium xl:font-bold">
-                      {price}BTC
-                    </p>
-                  </div>
-                </div>
+                <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0">
+                  Claim Ordinal Copies of your Ethereum NFTs
+                </p>
               </div>
-            );
-          })}
-        </div>
+            </div>
+            {/* <div className=" lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-[23px] gap-y-[30px] mt-20 lg:mt-0">
+              {networks.map((network, idx) => {
+                const { name, number, price, imgUrl, love } = network;
+                return (
+                  <div
+                    key={idx}
+                    data-animate
+                    className="rounded-3xl overflow-hidden bg-[#2A35474D] max-h-[251px] max-w-[210px] xl:max-w-full"
+                  >
+                    <div className="relative">
+                      <Image
+                        src={imgUrl}
+                        width={265}
+                        height={190}
+                        alt="image"
+                      />
+                      <div className="group w-[38px] h-[17px] absolute top-2 right-3 rounded-full bg-[#2F2F3433] px-2.5 py-1 flex items-center cursor-pointer border border-transparent hover:border-primary">
+                        <Heart className="group-hover:text-primary text-white" />{' '}
+                        <span className="text-[8.5px] mt-0.5 ml-0.5 group-hover:text-primary text-white">
+                          {love}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="pt-3 pb-6 mx-2 xl:mx-3.5 text-white">
+                      <h5 className="text-center text-xs ">{name}</h5>
+                      <div className="mt-2 flex items-center justify-between">
+                        <p className="text-sm font-medium xl:font-bold">
+                          #{number}
+                        </p>
+                        <p className="text-sm font-medium xl:font-bold">
+                          {price}BTC
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div> */}
+            <div className="relative lg:flex-1 hidden lg:block w-full min-h-[220px] 2xl:min-h-full">
+              <Image src={'/img/slide-1.png'} fill alt="image" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="w-full min-h-full lg:flex gap-14 2xl:gap-[65px]">
+            <div className="lg:w-[40%] min-h-full">
+              <h1
+                id="hero-title"
+                className="lg:w-[636px] mt-5 2xl:mt-20 font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
+              >
+                Satoshi Studio{' '}
+                <span className="text-primary">
+                  Creator Partnership Program
+                </span>
+              </h1>
+              <p className="px-5 text-center text-lg lg:text-3xl font-dm-sans font-normal text-[#B9B8BB] mt-10">
+                Rewards Creators & Owners of NFT Collections across Multiple
+                Blockchains
+              </p>
+              <div
+                id="hero-button"
+                className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer"
+              >
+                <div className="pr-7 sm:pr-[33px] py-2">
+                  <Etherium />
+                </div>
+                <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0 lg:pl-5">
+                  Verify Your Collection Now
+                </p>
+              </div>
+            </div>
+            <div className="relative lg:flex-1 hidden lg:block w-full min-h-[220px] 2xl:min-h-full">
+              <Image src={'/img/slide-2.png'} fill alt="image" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="w-full lg:flex">
+            <div className="lg:w-[42%]">
+              <h1
+                id="hero-title"
+                className="mt-5 lg:mt-24 font-bold text-[40px] leading-[45px] xl:text-5xl xl:leading-[54px] 2xl:text-[56px] 2xl:leading-[68px] text-white text-center lg:text-left"
+              >
+                Bringing Value Art To{' '}
+                <span className="text-primary">Bitcoin</span>, the most secure
+                and decentralized Blockchain network
+              </h1>
+              <div
+                id="hero-button"
+                className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer"
+              >
+                <div className="pr-7 sm:pr-[33px] py-2">
+                  <Etherium />
+                </div>
+                <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0">
+                  Claim Ordinal Copies of your Ethereum NFTs
+                </p>
+              </div>
+            </div>
+            {/* <div className=" lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-[23px] gap-y-[30px] mt-20 lg:mt-0">
+              {networks.map((network, idx) => {
+                const { name, number, price, imgUrl, love } = network;
+                return (
+                  <div
+                    key={idx}
+                    data-animate
+                    className="rounded-3xl overflow-hidden bg-[#2A35474D] max-h-[251px] max-w-[210px] xl:max-w-full"
+                  >
+                    <div className="relative">
+                      <Image
+                        src={imgUrl}
+                        width={265}
+                        height={190}
+                        alt="image"
+                      />
+                      <div className="group w-[38px] h-[17px] absolute top-2 right-3 rounded-full bg-[#2F2F3433] px-2.5 py-1 flex items-center cursor-pointer border border-transparent hover:border-primary">
+                        <Heart className="group-hover:text-primary text-white" />{' '}
+                        <span className="text-[8.5px] mt-0.5 ml-0.5 group-hover:text-primary text-white">
+                          {love}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="pt-3 pb-6 mx-2 xl:mx-3.5 text-white">
+                      <h5 className="text-center text-xs ">{name}</h5>
+                      <div className="mt-2 flex items-center justify-between">
+                        <p className="text-sm font-medium xl:font-bold">
+                          #{number}
+                        </p>
+                        <p className="text-sm font-medium xl:font-bold">
+                          {price}BTC
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div> */}
+            <div className="relative flex-1 w-full min-h-full">
+              <Image src={'/img/slide-1.png'} fill alt="image" />
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
       <div
         id="hero-bottom"

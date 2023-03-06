@@ -22,3 +22,4 @@ export { default as Telegram } from './Telegram';
 export { default as Youtube } from './Youtube';
 export { default as Tiktok } from './Tiktok';
 export { default as Discord } from './Discord';
+export { default as Instagram } from './Instagram';

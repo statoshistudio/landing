@@ -11,3 +11,33 @@
     rgba(100, 97, 113, 0.148) 99.07%
   );
 }
+
+.swiper {
+  padding-bottom: 50px !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0 !important;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 64px;
+  height: 12px;
+  border-radius: 30px;
+  background-color: #d9d9d9;
+}

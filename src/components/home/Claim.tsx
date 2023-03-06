@@ -17,10 +17,10 @@ const Claim = () => {
         </h2>
         <h4
           data-animate
-          className="text-lg sm:text-2xl xl:text-3xl font-medium mt-6 sm:mt-9 xl:mt-11"
+          className="text-lg sm:text-2xl xl:text-3xl font-medium mt-6 sm:mt-9 xl:mt-11 text-[#B9B8BB] font-dm-sans"
         >
-          We have made it possible to inscribe or <br /> claim a copy on the
-          bitcoin network
+          We have made it Easy to inscribe Your NFT
+          <br /> Assets on the bitcoin network
         </h4>
         <h3
           data-animate
@@ -44,18 +44,18 @@ const Claim = () => {
             <Folder />
           </div>
           <h5 className="text-xl font-bold mt-5 text-white">Create</h5>
-          <p className="mt-5 text-white text-lg">
+          <p className="mt-5 text-white text-lg max-w-[261px]">
             Create your Satoshi Studio ordinal wallet and secure your private
             keys.
           </p>
-          <div className="max-w-[144px] mx-auto mt-[38px]">
+          {/* <div className="max-w-[144px] mx-auto mt-[38px]">
             <Link href={'/'} className="text-center">
               <div className="py-2 px-4 flex items-center border border-[#28303F] duration-500 hover:border-primary hover:text-primary rounded-full">
                 <p className="text-sm font-bold leading-[22px]">View more</p>{' '}
                 <Arrow className="ml-3" />
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div
           data-animate
@@ -65,17 +65,17 @@ const Claim = () => {
             <Connect />
           </div>
           <h5 className="text-xl font-bold mt-5 text-white">Link</h5>
-          <p className="mt-5 text-white text-lg max-w-[209px] mx-[38px]">
-            Link your metamask (EVM) address to your account.
+          <p className="mt-5 text-white text-lg max-w-[261px] max-w-[209px] mx-[38px]">
+            Link your metamask (EVM) address to your ordinal wallet.
           </p>
-          <div className="max-w-[144px] mx-auto mt-[38px]">
+          {/* <div className="max-w-[144px] mx-auto mt-[38px]">
             <Link href={'/'} className="text-center">
               <div className="py-2 px-4 flex items-center border border-[#28303F] duration-500 hover:border-primary hover:text-primary rounded-full">
                 <p className="text-sm font-bold leading-[22px]">View more</p>{' '}
                 <Arrow className="ml-3" />
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div
           data-animate
@@ -85,17 +85,18 @@ const Claim = () => {
             <Wallet />
           </div>
           <h5 className="text-xl font-bold mt-5 text-white">Pay</h5>
-          <p className="mt-5 text-white text-lg">
-            Transfer BTC to your ordinal wallet to pay minting transaction fees.
+          <p className="mt-5 text-white text-lg max-w-[261px]">
+            Transfer BTC to your ordinal wallet to pay Inscription (transaction)
+            fees.
           </p>
-          <div className="max-w-[144px] mx-auto mt-[38px]">
+          {/* <div className="max-w-[144px] mx-auto mt-[38px]">
             <Link href={'/'} className="text-center">
               <div className="py-2 px-4 flex items-center border border-[#28303F] duration-500 hover:border-primary hover:text-primary rounded-full">
                 <p className="text-sm font-bold leading-[22px]">View more</p>{' '}
                 <Arrow className="ml-3" />
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div
           data-animate
@@ -105,26 +106,32 @@ const Claim = () => {
             <Trade />
           </div>
           <h5 className="text-xl font-bold mt-5 text-white">Claim</h5>
-          <p className="mt-5 text-white text-lg">
-            Claim your existing EVM NFTs as ordinals on the bitcoin network or
-            create new ordinals
+          <p className="mt-5 text-white text-lg max-w-[261px]">
+            Inscribe your existing EVM NFTs as ordinals on the bitcoin network
+            or create new ordinals
           </p>
-          <div className="max-w-[144px] mx-auto mt-[38px]">
+          {/* <div className="max-w-[144px] mx-auto mt-[38px]">
             <Link href={'/'} className="text-center">
               <div className="py-2 px-4 flex items-center border border-[#28303F] duration-500 hover:border-primary hover:text-primary rounded-full">
                 <p className="text-sm font-bold leading-[22px]">View more</p>{' '}
                 <Arrow className="ml-3" />
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="mt-20 lg:mt-[105px] text-center">
+      <div className="mt-20 lg:mt-[105px] text-center lg:flex items-center justify-center">
+        <button className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-primary hover:bg-primary/80 duration-200 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-base 2xl:text-2xl font-bold rounded-full">
+          Inscribe Ordinals Of Your Ethereum and Solana NFTs Now
+        </button>
+        <p className="uppercase font-bold text-lg sm:text-xl md:text-2xl lg:text-base text-center my-6 lg:my-0 lg:w-40">
+          or
+        </p>
         <button
-          id="claim-button"
-          className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-primary hover:bg-primary/80 duration-300 text-lg sm:text-xl md:text-2xl font-bold rounded-full"
+          id="claim-button-2"
+          className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-[#904C25] hover:bg-opacity-80 duration-200 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-base font-bold rounded-full"
         >
-          Claim Ordinal Copy Of Your NFTs Now
+          Create A New Ordinal
         </button>
       </div>
     </div>

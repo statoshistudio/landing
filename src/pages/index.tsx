@@ -145,6 +145,9 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Satoshi Studio</title>
+      </Head>
       {isMounted ? (
         <div
           ref={homeRef}
