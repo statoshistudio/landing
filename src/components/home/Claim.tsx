@@ -11,7 +11,7 @@ const Claim = () => {
           className="text-3xl sm:text-[40px] sm:leading-[46px] lg:leading-[45px] xl:text-[50px] xl:leading-[72px] font-bold"
         >
           Do you own valuable
-          <span className="text-primary">NFTs</span>
+          <span className="text-primary"> NFTs </span>
           on any <br className="hidden md:block" /> EVM (ETH,Polygon, BSC)
           network?
         </h2>
@@ -65,7 +65,7 @@ const Claim = () => {
             <Connect />
           </div>
           <h5 className="text-xl font-bold mt-5 text-white">Link</h5>
-          <p className="mt-5 text-white text-lg max-w-[261px] max-w-[209px] mx-[38px]">
+          <p className="mt-5 text-white text-lg max-w-[261px] lg:max-w-[209px] mx-[38px]">
             Link your metamask (EVM) address to your ordinal wallet.
           </p>
           {/* <div className="max-w-[144px] mx-auto mt-[38px]">
