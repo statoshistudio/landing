@@ -40,6 +40,9 @@ const Footer = () => {
                   Adding value to the Bitcoin network through social innovation
                   and art
                 </p>
+                <button className="bg-primary -translate-x-3 lg:block rounded-2xl w-[202px] h-[49px] text-xl text-white uppercase font-bold font-dm-sans mt-7 hover:bg-opacity-80 transition-all duration-200 ease-in-out">
+                  donate
+                </button>
               </div>
             </div>
             <p
@@ -49,9 +52,6 @@ const Footer = () => {
               Adding value to the Bitcoin network through social innovation and
               art
             </p>
-            <button className="bg-primary lg:block rounded-full w-[202px] h-[49px] text-xl text-white uppercase font-bold font-dm-sans mt-7 hover:bg-opacity-80 transition-all duration-200 ease-in-out">
-              donate
-            </button>
           </div>
           <div className="flex-grow flex flex-wrap xl:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -223,7 +223,7 @@ const Footer = () => {
                   >
                     <div
                       data-animate
-                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
+                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center hover:bg-opacity-80"
                     >
                       <Twitter />
                     </div>
@@ -235,7 +235,7 @@ const Footer = () => {
                   >
                     <div
                       data-animate
-                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
+                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center hover:bg-opacity-80"
                     >
                       <Instagram />
                     </div>
@@ -255,7 +255,7 @@ const Footer = () => {
                   >
                     <div
                       data-animate
-                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
+                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center hover:bg-opacity-80"
                     >
                       <Telegram />
                     </div>
@@ -268,10 +268,14 @@ const Footer = () => {
                       <Youtube />
                     </div>
                   </Link> */}
-                  <Link href="">
+                  <Link
+                    href="https://www.tiktok.com/@satoshisnft"
+                    target={'_blank'}
+                    passHref
+                  >
                     <div
                       data-animate
-                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
+                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center hover:bg-opacity-80"
                     >
                       <Tiktok />
                     </div>
@@ -283,7 +287,7 @@ const Footer = () => {
                   >
                     <div
                       data-animate
-                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center"
+                      className="w-10 h-10 rounded-lg bg-[#28303F] flex justify-center items-center hover:bg-opacity-80"
                     >
                       <Discord />
                     </div>

@@ -87,7 +87,7 @@ const Hero = () => {
                     <Etherium />
                   </div>
                   <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0">
-                    Claim Ordinal Copies of your Ethereum NFTs
+                    Inscribe Your Ethereum and Solana NFTs As Ordinals
                   </p>
                 </div>
               </div>
@@ -186,7 +186,7 @@ const Hero = () => {
                     <Etherium />
                   </div>
                   <p className="text-center font-bold text-base sm:text-lg xl:text-xl leading-6 text-white border-l sm:py-2 px-2 sm:px-0">
-                    Claim Ordinal Copies of your Ethereum NFTs
+                    Inscribe Your Ethereum and Solana NFTs As Ordinals
                   </p>
                 </div>
               </div>

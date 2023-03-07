@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { BlueStar } from '../icons';
 
@@ -68,16 +69,26 @@ const Trending = () => {
 
   return (
     <div className="px-[7%] 2xl:px-[10%] font-dm-sans mt-28 xl:mt-[181px] text-white xl:pb-[75px]">
-      <div id="collections-title">
-        <h2
-          data-animate
-          className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] font-bold"
-        >
-          Trending Collection
-        </h2>
-        <p data-animate className="text-base xs:text-lg text-[#A9A9C2] mt-2">
-          The most well-known Collection - Based on the last 30 days{' '}
-        </p>
+      <div id="collections-title" className="flex justify-between items-center">
+        <div className="">
+          <h2
+            data-animate
+            className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] font-bold"
+          >
+            Trending Collection
+          </h2>
+          <p data-animate className="text-base xs:text-lg text-[#A9A9C2] mt-2">
+            The most well-known Collection - Based on the last 30 days{' '}
+          </p>
+        </div>
+        <div className="max-w-[144px]">
+          <Link href={'#'} className="text-center">
+            <div className="py-2 px-4 flex items-center border border-[#28303F] duration-500 hover:border-primary hover:text-primary rounded-full">
+              <p className="text-sm font-bold leading-[22px]">View more</p>{' '}
+              {/* <Arrow className="ml-3" /> */}
+            </div>
+          </Link>
+        </div>
       </div>
       <div id="collections" className="pt-20 xl:flex justify-center gap-4">
         <div className="xl:w-1/2">

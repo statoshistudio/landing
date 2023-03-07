@@ -1,5 +1,7 @@
 import React from 'react';
 import { BlueStar } from '@app/components/icons';
+import Link from 'next/link';
+import Arrow from '../icons/Menu';
 const collectoinsData = [
   {
     title: 'Bored Ape Yatch Club',
@@ -29,19 +31,29 @@ const collectoinsData = [
 const Evms = () => {
   return (
     <div className="px-[7%] 2xl:px-[10%] font-dm-sans mt-28 xl:mt-[181px] text-white">
-      <div id="evms-title">
-        <h2
-          data-animate
-          className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] text-center sm:text-left font-bold"
-        >
-          Top Verified Collections from Popular EVMs
-        </h2>
-        <p
-          data-animate
-          className="text-lg text-[#A9A9C2] mt-2 text-center sm:text-left"
-        >
-          The most well-known Collection - Based on the last 30 days{' '}
-        </p>
+      <div id="evms-title" className="flex justify-between items-center">
+        <div className="">
+          <h2
+            data-animate
+            className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] text-center sm:text-left font-bold"
+          >
+            Top Verified Collections from Popular EVMs
+          </h2>
+          <p
+            data-animate
+            className="text-lg text-[#A9A9C2] mt-2 text-center sm:text-left"
+          >
+            The most well-known Collection - Based on the last 30 days{' '}
+          </p>
+        </div>
+        <div className="max-w-[144px]">
+          <Link href={'#'} className="text-center">
+            <div className="py-2 px-4 flex items-center border border-[#28303F] duration-500 hover:border-primary hover:text-primary rounded-full">
+              <p className="text-sm font-bold leading-[22px]">View more</p>{' '}
+              {/* <Arrow className="ml-3" /> */}
+            </div>
+          </Link>
+        </div>
       </div>
       <div
         id="evms"

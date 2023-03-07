@@ -129,7 +129,7 @@ const Claim = () => {
         </p>
         <button
           id="claim-button-2"
-          className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-[#904C25] hover:bg-opacity-80 duration-200 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-base font-bold rounded-full"
+          className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-[#904C25] hover:bg-opacity-80 duration-200 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-base 2xl:text-2xl font-bold rounded-full"
         >
           Create A New Ordinal
         </button>

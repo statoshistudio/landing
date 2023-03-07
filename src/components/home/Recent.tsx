@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { BlueStar, Etherium2, Heart2 } from '../icons';
 
@@ -48,16 +49,29 @@ const Recent = () => {
 
   return (
     <div className="px-[7%] 2xl:px-[10%] font-dm-sans mt-28 xl:mt-[181px] text-white">
-      <div id="recent-purchase-title">
-        <h2
-          data-animate
-          className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] font-bold"
-        >
-          Recent Purchases
-        </h2>
-        <p data-animate className="text-base xs:text-lg text-[#A9A9C2] mt-2">
-          The most recent purchases made on our platform
-        </p>
+      <div
+        id="recent-purchase-title"
+        className="flex justify-between items-center"
+      >
+        <div className="">
+          <h2
+            data-animate
+            className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] font-bold"
+          >
+            Recent Purchases
+          </h2>
+          <p data-animate className="text-base xs:text-lg text-[#A9A9C2] mt-2">
+            The most recent purchases made on our platform
+          </p>
+        </div>
+        <div className="max-w-[144px]">
+          <Link href={'#'} className="text-center">
+            <div className="py-2 px-4 flex items-center border border-[#28303F] duration-500 hover:border-primary hover:text-primary rounded-full">
+              <p className="text-sm font-bold leading-[22px]">View more</p>{' '}
+              {/* <Arrow className="ml-3" /> */}
+            </div>
+          </Link>
+        </div>
       </div>
       <div
         id="recent-purchase"
@@ -92,8 +106,7 @@ const Recent = () => {
                   />
                 </p>
                 <p className="text-sm mt-[15px] flex items-center gap-2">
-                  {' '}
-                  <Etherium2 /> {coin} BTC (${dollar})
+                  {coin} BTC (${dollar})
                 </p>
               </div>
             </div>
