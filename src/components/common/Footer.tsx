@@ -281,7 +281,7 @@ const Footer = () => {
                     </div>
                   </Link>
                   <Link
-                    href="https://discord.gg/Zy7nnQCK"
+                    href="https://discord.gg/qbzG3M59nN"
                     target={'_blank'}
                     passHref
                   >
