@@ -1,9 +1,7 @@
-import * as React from "react";
-import { SVGProps } from "react";
+import * as React from 'react';
+import { SVGProps } from 'react';
 
-interface Props extends SVGProps<SVGSVGElement> {
-
-}
+interface Props extends SVGProps<SVGSVGElement> {}
 
 const Wallet = (props: Props) => (
   <svg
@@ -36,4 +34,4 @@ const Wallet = (props: Props) => (
   </svg>
 );
 
-export default Wallet ;
+export default Wallet;
