@@ -122,7 +122,7 @@ const Footer = () => {
                 </li>
                 <li data-animate>
                   <Link
-                    href=""
+                    href="/donate"
                     className="text-[#B9B8BB] hover:text-opacity-80"
                   >
                     Donate
