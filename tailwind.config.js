@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {Plugin} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
@@ -23,5 +25,21 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+    plugin(function ({ addVariant }) {
+      addVariant(
+        'sm-only',
+        "@media screen and (max-width: theme('screens.sm'))"
+      ); // instead of hard-coded 640px use sm breakpoint value from config. Or anything
+      addVariant(
+          'md-only',
+          "@media screen and (max-width: theme('screens.md'))"
+      ); // instead of hard-coded 640px use sm breakpoint value from config. Or anything
+      addVariant(
+          'lg-only',
+          "@media screen and (max-width: theme('screens.lg'))"
+      ); // instead of hard-coded 640px use sm breakpoint value from config. Or anything
+    }),
+  ],
 };

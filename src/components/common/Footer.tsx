@@ -164,7 +164,7 @@ const Footer = () => {
               <ul className="list-none mb-10 space-y-4">
                 <li data-animate>
                   <Link
-                    href=""
+                    href="/lite-paper"
                     className="text-[#B9B8BB] hover:text-opacity-80"
                   >
                     Lite Paper
@@ -172,7 +172,7 @@ const Footer = () => {
                 </li>
                 <li data-animate>
                   <Link
-                    href=""
+                    href="/faqs"
                     className="text-[#B9B8BB] hover:text-opacity-80"
                   >
                     FAQs
