@@ -180,8 +180,8 @@ const FAQPage = () => {
                     height={300}
                     width={300}
                   />
-                  <div className="flex flex-row items-center gap-[10px]">
-                    <span className={'text-[#B9B8BB]'}>
+                  <div className="flex flex-row items-center gap-[10px] w-full sm-only:flex-wrap sm-only:justify-center">
+                    <span className={'text-[#B9B8BB] break-words'}>
                       0x2170ed0880ac9a755fd29b2688956bd959f933f8
                     </span>
                     <button
