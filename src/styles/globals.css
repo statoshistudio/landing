@@ -7,6 +7,7 @@
 
 
 .gradient-background {
+  /*color: rgba(165, 165, 255, 0.15);*/
   background: linear-gradient(
     156.67deg,
     rgba(112, 112, 114, 0.4) 0.07%,

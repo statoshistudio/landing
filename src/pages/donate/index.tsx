@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import { Footer, Header } from '@app/components';
-import { useEffect, useRef, useState } from 'react';
+import {Footer, Header} from '@app/components';
+import {useEffect, useRef, useState} from 'react';
 import gsap from 'gsap';
-import { useMediaQuery } from 'react-responsive';
-import { copyToClipboard } from '@app/utils/fn';
+import {useMediaQuery} from 'react-responsive';
+import {copyToClipboard} from '@app/utils/fn';
 
 const FAQPage = () => {
   const [isMounted, setMounted] = useState(false);
@@ -180,7 +180,7 @@ const FAQPage = () => {
                     height={300}
                     width={300}
                   />
-                  <div className="flex flex-row items-center gap-[10px] w-full sm-only:flex-wrap sm-only:justify-center">
+                  <div className="flex flex-row items-center gap-[10px] w-full sm-only:flex-wrap justify-center">
                     <span className={'text-[#B9B8BB] break-words'}>
                       0x2170ed0880ac9a755fd29b2688956bd959f933f8
                     </span>

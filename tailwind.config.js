@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#AA20DA',
+        'text-sec-color': '#B9B8BB'
       },
       fontFamily: {
         engagement: ['Engagement', 'cursive'],
