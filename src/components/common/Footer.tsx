@@ -1,15 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import {
-  Discord,
-  Facebook,
-  Instagram,
-  Telegram,
-  Tiktok,
-  Twitter,
-  Youtube,
-} from '../icons';
+import {Discord, Instagram, Telegram, Tiktok, Twitter,} from '../icons';
 
 const Footer = () => {
   return (
@@ -40,9 +32,11 @@ const Footer = () => {
                   Adding value to the Bitcoin network through social innovation
                   and art
                 </p>
-                <button className="bg-primary -translate-x-3 lg:block rounded-2xl w-[202px] h-[49px] text-xl text-white uppercase font-bold font-dm-sans mt-7 hover:bg-opacity-80 transition-all duration-200 ease-in-out">
-                  donate
-                </button>
+                <Link href={'/donate'} passHref>
+                  <button className="bg-primary -translate-x-3 lg:block rounded-2xl w-[202px] h-[49px] text-xl text-white uppercase font-bold font-dm-sans mt-7 hover:bg-opacity-80 transition-all duration-200 ease-in-out">
+                    donate
+                  </button>
+                </Link>
               </div>
             </div>
             <p
@@ -146,7 +140,7 @@ const Footer = () => {
                 </li>
                 <li data-animate>
                   <Link
-                    href=""
+                    href="/privacy-policy"
                     className="text-[#B9B8BB] hover:text-opacity-80"
                   >
                     Privacy Policy
