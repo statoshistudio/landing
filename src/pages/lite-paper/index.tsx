@@ -126,10 +126,10 @@ const LitePartnershipPage = () => {
 
               <div
                 data-animate={'true'}
-                className="py-[15px] grid grid-cols-12 gap-[47px] place-content-center w-full"
+                className="py-[15px] flex flex-nowrap flex-start flex-row gap-[50px] sm-only:flex-wrap"
               >
-                <div className="col-span-12 p-[20px] flex items-center pt-[104px] flex-col">
-                  <p className="text-[16px] pl-[7px] leading-[2rem] text-[#B9B8BB] font-normal">
+                <div className="xl:basis-6/12 flex pt-[104px] flex-col">
+                  <span className="text-[16px] leading-[2rem] text-[#B9B8BB] font-normal">
                     This partnership is aimed at NFT creators who have built the
                     NFT ecosystem to be what it is today. A lot of creative NFT
                     collections have been developed on EVM chains and the Solana
@@ -149,13 +149,13 @@ const LitePartnershipPage = () => {
                     existing collection on satoshi studio and you will be paid a
                     share of revenue from the trading activity of ordinals
                     derived from your collection.
-                  </p>
+                  </span>
                   <p className={'pt-[20px] text-[#B9B8BB] font-normal'}>
                     *NB - THE PROGRAM WILL BE IN TEST PHASE FOR 9 MONTHS (MARCH
                     30TH, 2023 - DECEMBER 30TH, 2023)
                   </p>
                 </div>
-                <div className={'xl:col-span-6 lg:col-span-6 sm:col-span-12 md:col-span-12  flex items-center'}>
+                <div className={'xl:basis-6/12 flex items-center'}>
                   <img
                     src={'/img/lite-parnership-hero-image.png'}
                     // width={60}
@@ -239,6 +239,12 @@ const LitePartnershipPage = () => {
                     of the creator.
                   </li>
                 </ol>
+              </div>
+
+              <div className="flex items-center w-full justify-center pt-[120px]">
+                <button className="font-bold text-white py-0 px-10 xl:px-[62px] rounded-[38px] h-[76px] border border-primary bg-[#1F1F2CE5] hover:text-primary duration-300">
+                  BEGIN VERIFICATION
+                </button>
               </div>
             </div>
 
