@@ -17,7 +17,7 @@ const FAQPage = () => {
     const menus = gsap.utils.toArray<Element>('[data-accordion-header]');
 
     const open = (content: Element, headerIndex: string, menu: Element) => {
-      setOpenedAccordion((prev) => {
+      setOpenedAccordion((prev: any) => {
         return [...prev, headerIndex!];
       });
 
@@ -38,7 +38,7 @@ const FAQPage = () => {
     };
 
     const close = (content: Element, headerIndex: string, menu: Element) => {
-      setOpenedAccordion((prev) =>
+      setOpenedAccordion((prev: any[]) =>
         prev.filter((element) => element !== headerIndex)
       );
       gsap.to(content, {
@@ -63,7 +63,7 @@ const FAQPage = () => {
       const headerIndex = menu.getAttribute('data-accordion-header');
 
       const listener = () => {
-        console.log('header')
+        console.log('header');
         if (openedAccordionRef.current.includes(headerIndex!)) {
           close(box!, headerIndex!, menu);
           return;
@@ -219,23 +219,24 @@ The inscription on bitcoin is not a replacement of the original NFT. Rather it c
       title: 'How can I inscribe my EVM and Solana NFTs?',
       content: `From the top menu click on the “Claim” button. 
 You will be asked to choose the chain that has your current NFTs and then to connect your wallet. Next, proceed with the instructions provided to successfully inscribe a verified Ordinal pointing to your NFT on its parent blockchain.
-`
+`,
     },
     {
-      title:'I am a creator with an NFT collection on another blockchain. How can I earn money from my collection on Satoshi Studio?',
+      title:
+        'I am a creator with an NFT collection on another blockchain. How can I earn money from my collection on Satoshi Studio?',
       content: `As a creator with an NFT collection on another blockchain, you can easily earn money on Satoshi Studio by joining the “Satoshi Studio Creator Partnership Program”. Through this program you earn a share of the inscription fees as holders of your collection inscribe their NFTs into ordinals. You also earn from the trading fees as your collections are traded on the Satoshi Studio marketplace. To be part of this program, begin by visiting the partnership program link on the homepage and follow the guidelines to apply.
-`
+`,
     },
     {
       title: 'Can I trade my Ordinals on Satoshi Studio?',
       content: `Yes. You can trade your ordinals in a decentralized manner on the SatoshiStudio marketplace. We utilize PSBTS (Partially Signed Bitcoin Transactions) to make it secure and trustless. Visit the “Marketplace” to start trading.
-`
+`,
     },
     {
       title: 'What are Satoshis?',
       content: `Satoshis are rare atomic gems that are generated when users perform activities on Satoshi Studio. What they represent is still a mystery and will be revealed in due course. Until then it is advisable to gather those sweet sweet startoshis.
-`
-    }
+`,
+    },
   ];
   return (
     <>

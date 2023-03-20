@@ -1,7 +1,7 @@
 import {Dispatch, MutableRefObject, useRef, useState} from 'react';
 import {isFunction} from '@app/utils/fn';
 
-type StateCallback<T> = (prev: T) => T;
+export type StateCallback<T> = (prev: T) => T;
 export const useReferredState = <T>(
   initialValue: T
 ): [T, MutableRefObject<T>, Dispatch<T | StateCallback<T>>] => {
