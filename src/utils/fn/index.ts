@@ -51,3 +51,8 @@ export const copyToClipboard = (e: MouseEvent, text: string) => {
   showSuccess();
   document.body.removeChild(textArea);
 };
+
+
+export const isFunction = (value: any) => {
+  return value && {}.toString.call(value) === '[object Function]';
+}

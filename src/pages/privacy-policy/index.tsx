@@ -103,7 +103,7 @@ const PrivacyPolicyPage = () => {
     return () => ctx.revert();
   }, [isTablet, isMounted]);
 
-  const divider = <div className="border-t-[5px] w-full border-[#A5A5FF26]" />;
+  const divider = <div className="border-t-[3px] w-full border-[#A5A5FF26]" />;
   const policies: Record<string, Record<string, string>> = {
     'Varieties of Data We Gather': {
       content: `“Personal Data” denotes data that can be utilized to distinguish you as an individual, such as your name, email address, and other non-public data connected to or linked with the above. “Anonymous Data” means data, including aggregated and de-identified data, that is not connected to or linked with your Personal Data. Anonymous Data on its own does not enable the identification of specific individuals. We gather Anonymous Data and Personal data you provide to us as specified below.`,
