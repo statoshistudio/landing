@@ -294,7 +294,7 @@ You will be asked to choose the chain that has your current NFTs and then to con
                         data-accordion-content={true}
                         className="overflow-hidden h-0"
                       >
-                        <p className={'text-[#B9B8BB] '}>{faq.content}</p>
+                        <p className={'text-[#B9B8BB] pl-7'}>{faq.content}</p>
                       </div>
                     </div>
                   );
