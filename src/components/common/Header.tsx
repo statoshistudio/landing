@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
-import { Fire, Menu, Moon } from '../icons';
+import {Fire, Menu, Moon} from '../icons';
 import dynamic from 'next/dynamic';
+
 const Drawer = dynamic(() => import('react-modern-drawer'), { ssr: false });
 
 const Header = () => {
@@ -84,7 +84,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="px-2">
-                <Link className="hover:text-primary duration-300" href={'/'}>
+                <Link className="hover:text-primary duration-300" href={'/lite-paper'}>
                   Ultra litepaper
                 </Link>
               </li>
