@@ -106,7 +106,7 @@ const CreateProgramPage = () => {
   return (
     <>
       <Head>
-        <title>Satoshi Studio ⎯ FAQs</title>
+        <title>Satoshi Studio ⎯ Creator Partnership</title>
       </Head>
       {isMounted ? (
         <div
@@ -115,10 +115,10 @@ const CreateProgramPage = () => {
         >
           <div className="max-w-[1920px] mx-auto">
             <Header />
-            <div className="font-dm-sans px-[7%] 2xl:px-[10%] font-dm-sans mt-28 xl:mt-[72px] text-white xl:pb-[75px]">
+            <div className="font-dm-sans px-[7%] 2xl:px-[17%] font-dm-sans mt-28 xl:mt-[72px] text-white xl:pb-[75px] leading-10">
               <h1
                 data-animate
-                className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] font-bold w-full text-center"
+                className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] font-bold w-full"
               >
                 SATOSHI STUDIO CREATOR PARTNERSHIP PROGRAM
               </h1>
@@ -127,7 +127,7 @@ const CreateProgramPage = () => {
                 data-animate={'true'}
                 className="py-[15px] flex flex-nowrap flex-start flex-row gap-[50px] sm-only:flex-wrap"
               >
-                <div className="xl:basis-6/12 flex pt-[104px] flex-col">
+                <div className="xl:basis-7/12 flex pt-[104px] flex-col">
                   <span className="text-[16px] leading-[2rem] text-[#B9B8BB] font-normal">
                     This partnership is aimed at NFT creators who have built the
                     NFT ecosystem to be what it is today. A lot of creative NFT
@@ -154,11 +154,11 @@ const CreateProgramPage = () => {
                     30TH, 2023 - DECEMBER 30TH, 2023)
                   </p>
                 </div>
-                <div className={'xl:basis-6/12 flex items-center'}>
+                <div className={'xl:basis-5/12 flex items-center'}>
                   <img
                     src={'/img/lite-parnership-hero-image.png'}
-                    // width={60}
-                    // height={60}
+                    // width={583}
+                    // height={449}
                     // fill
                     // className="object-fill"
                     alt="partnership-image"
@@ -173,7 +173,7 @@ const CreateProgramPage = () => {
                 PROGRAM GUIDELINES
               </h2>
               <div className="flex py-[35px] flex-col flex-center">
-                <ol className={'list-decimal text-[#B9B8BB] font-normal'}>
+                <ol className={'list-decimal text-[#B9B8BB] font-normal list-inside pl-4'}>
                   <li>A creator is required to apply for verification</li>
                   <li>
                     A creator should have an EVM or Solana wallet address linked
