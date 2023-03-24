@@ -117,7 +117,7 @@ const TermsOfServicePage = () => {
         >
           <div className="max-w-[1920px] mx-auto">
             <Header />
-            <div className="font-dm-sans px-[7%] 2xl:px-[10%] font-dm-sans mt-28 xl:mt-[72px] text-white xl:pb-[75px] leading-9">
+            <div className="font-dm-sans px-[7%] 2xl:px-[22.6%] font-dm-sans mt-28 xl:mt-[72px] text-white xl:pb-[75px] leading-10">
               <h1
                 data-animate
                 className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] font-bold w-full"

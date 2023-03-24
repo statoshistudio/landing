@@ -140,7 +140,7 @@ const Footer = () => {
                 </li>
                 <li data-animate>
                   <Link
-                    href="/privacy-policy"
+                    href="/privacy"
                     className="text-[#B9B8BB] hover:text-opacity-80"
                   >
                     Privacy Policy

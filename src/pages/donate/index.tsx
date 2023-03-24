@@ -116,7 +116,7 @@ const FAQPage = () => {
         >
           <div className="max-w-[1920px] mx-auto">
             <Header />
-            <div className="font-dm-sans px-[7%] 2xl:px-[10%] font-dm-sans mt-28 xl:mt-[70px] text-white xl:pb-[75px]">
+            <div className="font-dm-sans px-[7%] 2xl:px-[16.8%] font-dm-sans mt-28 xl:mt-[70px] text-white xl:pb-[75px]">
               <h1
                 data-animate
                 className="text-2xl xs:text-3xl sm:text-4xl md:text-[40px] font-bold"
@@ -126,53 +126,56 @@ const FAQPage = () => {
               <h3 className={'text-[#B9B8BB] pt-[10px]'}>
                 We appreciate your donation to any of our wallet addresses below
               </h3>
-              <div className="flex items-center flex-wrap flex-row justify-center gap-y-[90px] pt-[60px]">
-                <div className="flex flex-col items-center justify-center gap-[20px] xl:basis-3/6">
-                  <h4>BITCOIN</h4>
-                  <img
-                    src="/img/bitcoin-qrcode.png"
-                    alt="Bitcoin QRCode"
-                    height={300}
-                    width={300}
-                  />
-                  <div className="flex flex-row items-center gap-[10px]">
+              <div className="flex items-center flex-wrap flex-row justify-center gap-y-[98px] pt-[60px]">
+                <div className="xl:basis-3/6 flex items-start">
+                  <div className="flex flex-col justify-center items-center gap-[20px]">
+                    <h4>BITCOIN</h4>
+                    <img
+                        src="/img/bitcoin-qrcode.png"
+                        alt="Bitcoin QRCode"
+                        height={300}
+                        width={300}
+                    />
+                    <div className="flex flex-row items-center gap-[10px]">
                     <span className={'text-[#B9B8BB]'}>
                       1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71
                     </span>
-                    <button
-                      onClick={(e) =>
-                        copyToClipboard(
-                          e as unknown as MouseEvent,
-                          '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71'
-                        )
-                      }
-                    >
-                      <svg
-                        width="22"
-                        height="22"
-                        viewBox="0 0 22 22"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <button
+                          onClick={(e) =>
+                              copyToClipboard(
+                                  e as unknown as MouseEvent,
+                                  '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71'
+                              )
+                          }
                       >
-                        <path
-                          d="M19 8H10C8.89543 8 8 8.89543 8 10V19C8 20.1046 8.89543 21 10 21H19C20.1046 21 21 20.1046 21 19V10C21 8.89543 20.1046 8 19 8Z"
-                          stroke="#B9B8BB"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M4 14H3C2.46957 14 1.96086 13.7893 1.58579 13.4142C1.21071 13.0391 1 12.5304 1 12V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V4"
-                          stroke="#B9B8BB"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </button>
+                        <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                              d="M19 8H10C8.89543 8 8 8.89543 8 10V19C8 20.1046 8.89543 21 10 21H19C20.1046 21 21 20.1046 21 19V10C21 8.89543 20.1046 8 19 8Z"
+                              stroke="#B9B8BB"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                          />
+                          <path
+                              d="M4 14H3C2.46957 14 1.96086 13.7893 1.58579 13.4142C1.21071 13.0391 1 12.5304 1 12V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V4"
+                              stroke="#B9B8BB"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-[20px] xl:basis-3/6">
+                <div className="xl:basis-3/6 flex items-end justify-end">
+                <div className="flex flex-col items-center justify-center gap-[20px]">
                   <h4>ETHEREUM, POLYGON, BSC, AVALANCHE</h4>
                   <img
                     src="/img/evm-qrcode.png"
@@ -216,6 +219,7 @@ const FAQPage = () => {
                       </svg>
                     </button>
                   </div>
+                </div>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-[20px] xl:basis-3/6">
                   <h4>SOLANA</h4>
