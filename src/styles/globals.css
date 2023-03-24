@@ -4,8 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .gradient-background {
   /*color: rgba(165, 165, 255, 0.15);*/
   background: linear-gradient(
@@ -43,4 +41,18 @@
   height: 12px;
   border-radius: 30px;
   background-color: #d9d9d9;
+}
+ol.list-nested-counter {
+  counter-reset: item;
+}
+
+ol.list-nested-counter li {
+  display: block;
+}
+
+/*ol.list-nested-counter > li:first-child {counter-reset: item;}*/
+
+ol.list-nested-counter li:before {
+  content: counters(item, '.')'. ';
+  counter-increment: item;
 }

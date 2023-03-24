@@ -108,7 +108,7 @@ const Footer = () => {
               <ul className="list-none mb-10 space-y-4">
                 <li data-animate>
                   <Link
-                    href=""
+                    href="/about-us"
                     className="text-[#B9B8BB] hover:text-opacity-80"
                   >
                     About Us
@@ -124,7 +124,7 @@ const Footer = () => {
                 </li>
                 <li data-animate>
                   <Link
-                    href=""
+                    href="/copyright-policy"
                     className="text-[#B9B8BB] hover:text-opacity-80"
                   >
                     Copyright Policy
@@ -132,7 +132,7 @@ const Footer = () => {
                 </li>
                 <li data-animate>
                   <Link
-                    href=""
+                    href="/terms-of-service"
                     className="text-[#B9B8BB] hover:text-opacity-80"
                   >
                     Terms of Service
