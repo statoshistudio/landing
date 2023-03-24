@@ -106,7 +106,7 @@ const CreateProgramPage = () => {
   return (
     <>
       <Head>
-        <title>Satoshi Studio ⎯ FAQs</title>
+        <title>Satoshi Studio ⎯ Creator Partnership</title>
       </Head>
       {isMounted ? (
         <div

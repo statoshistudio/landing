@@ -128,7 +128,7 @@ const PrivacyPolicyPage = () => {
   return (
     <>
       <Head>
-        <title>Satoshi Studio ⎯ FAQs</title>
+        <title>Satoshi Studio ⎯ Privacy Policy</title>
       </Head>
       {isMounted ? (
         <div

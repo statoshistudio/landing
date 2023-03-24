@@ -107,7 +107,7 @@ const FAQPage = () => {
   return (
     <>
       <Head>
-        <title>Satoshi Studio ⎯ FAQs</title>
+        <title>Satoshi Studio ⎯ Donate</title>
       </Head>
       {isMounted ? (
         <div

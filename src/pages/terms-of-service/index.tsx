@@ -108,7 +108,7 @@ const TermsOfServicePage = () => {
   return (
     <>
       <Head>
-        <title>Satoshi Studio ⎯ FAQs</title>
+        <title>Satoshi Studio ⎯ Terms of Service</title>
       </Head>
       {isMounted ? (
         <div

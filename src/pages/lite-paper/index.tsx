@@ -108,7 +108,7 @@ const LitePaperPage = () => {
   return (
     <>
       <Head>
-        <title>Satoshi Studio ⎯ FAQs</title>
+        <title>Satoshi Studio ⎯ Lite Paper</title>
       </Head>
       {isMounted ? (
         <div
