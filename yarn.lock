@@ -3082,6 +3082,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"qr.js@npm:0.0.0":
+  version: 0.0.0
+  resolution: "qr.js@npm:0.0.0"
+  checksum: 5ac6c393967bdeaa660e7fd3a501a25eb538c1f6008a4d30ab2b97bbe520e5c236530090773f1578aa0a523cdaa6923c866615e21143f9e7cd22abd41c789b69
+  languageName: node
+  linkType: hard
+
 "queue-microtask@npm:^1.2.2":
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
@@ -3121,6 +3128,22 @@ __metadata:
   peerDependencies:
     react: ">16.0.0"
   checksum: 4f6a9f04682e1be600e14c907c1c4d039c9000b2cc7838cb2400c2e43e4327274c1e0012d5919887d9f435e428069f41c7f169fc42d4d99c3998b60b36d78b4d
+  languageName: node
+  linkType: hard
+
+"react-qr-code@npm:^2.0.11":
+  version: 2.0.11
+  resolution: "react-qr-code@npm:2.0.11"
+  dependencies:
+    prop-types: ^15.8.1
+    qr.js: 0.0.0
+  peerDependencies:
+    react: ^16.x || ^17.x || ^18.x
+    react-native-svg: "*"
+  peerDependenciesMeta:
+    react-native-svg:
+      optional: true
+  checksum: 680f7be35078892a29999013b24e36aae10c3529e4cdd2c1436573603864c45010445d6069969d7f76e4642c54584a3b941b8c944189273c3ac5b705156ad23b
   languageName: node
   linkType: hard
 
@@ -3336,6 +3359,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     react-modern-drawer: ^1.2.0
+    react-qr-code: ^2.0.11
     react-responsive: ^9.0.2
     swiper: ^9.1.0
     tailwind-scrollbar: ^2.1.0

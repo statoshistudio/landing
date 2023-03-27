@@ -4,6 +4,7 @@ import {useEffect, useRef, useState} from 'react';
 import gsap from 'gsap';
 import {useMediaQuery} from 'react-responsive';
 import {copyToClipboard} from '@app/utils/fn';
+import QRCode from 'react-qr-code';
 
 const FAQPage = () => {
   const [isMounted, setMounted] = useState(false);
@@ -130,44 +131,57 @@ const FAQPage = () => {
                 <div className="xl:basis-3/6 flex items-start">
                   <div className="flex flex-col justify-center items-center gap-[20px]">
                     <h4>BITCOIN</h4>
-                    <img
-                        src="/img/bitcoin-qrcode.png"
-                        alt="Bitcoin QRCode"
-                        height={300}
-                        width={300}
-                    />
+                    <div
+                      style={{
+                        height: 'auto',
+                        margin: '0 auto',
+                        maxWidth: 300,
+                        width: '100%',
+                      }}
+                    >
+                      <QRCode
+                        size={300}
+                        style={{
+                          height: 'auto',
+                          maxWidth: '100%',
+                          width: '100%',
+                        }}
+                        value={process.env.NEXT_PUBLIC_DONATION_BTC!}
+                        viewBox={`0 0 300 300`}
+                      />
+                    </div>
                     <div className="flex flex-row items-center gap-[10px]">
-                    <span className={'text-[#B9B8BB]'}>
-                      1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71
-                    </span>
+                      <span className={'text-[#B9B8BB]'}>
+                        {process.env.NEXT_PUBLIC_DONATION_BTC!}
+                      </span>
                       <button
-                          onClick={(e) =>
-                              copyToClipboard(
-                                  e as unknown as MouseEvent,
-                                  '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71'
-                              )
-                          }
+                        onClick={(e) =>
+                          copyToClipboard(
+                            e as unknown as MouseEvent,
+                            process.env.NEXT_PUBLIC_DONATION_BTC!
+                          )
+                        }
                       >
                         <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 22 22"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                              d="M19 8H10C8.89543 8 8 8.89543 8 10V19C8 20.1046 8.89543 21 10 21H19C20.1046 21 21 20.1046 21 19V10C21 8.89543 20.1046 8 19 8Z"
-                              stroke="#B9B8BB"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
+                            d="M19 8H10C8.89543 8 8 8.89543 8 10V19C8 20.1046 8.89543 21 10 21H19C20.1046 21 21 20.1046 21 19V10C21 8.89543 20.1046 8 19 8Z"
+                            stroke="#B9B8BB"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           />
                           <path
-                              d="M4 14H3C2.46957 14 1.96086 13.7893 1.58579 13.4142C1.21071 13.0391 1 12.5304 1 12V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V4"
-                              stroke="#B9B8BB"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
+                            d="M4 14H3C2.46957 14 1.96086 13.7893 1.58579 13.4142C1.21071 13.0391 1 12.5304 1 12V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V4"
+                            stroke="#B9B8BB"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           />
                         </svg>
                       </button>
@@ -175,70 +189,96 @@ const FAQPage = () => {
                   </div>
                 </div>
                 <div className="xl:basis-3/6 flex items-end justify-end">
-                <div className="flex flex-col items-center justify-center gap-[20px]">
-                  <h4>ETHEREUM, POLYGON, BSC, AVALANCHE</h4>
-                  <img
-                    src="/img/evm-qrcode.png"
-                    alt="EVM QRCode"
-                    height={300}
-                    width={300}
-                  />
-                  <div className="flex flex-row items-center gap-[10px] w-full sm-only:flex-wrap justify-center">
-                    <span className={'text-[#B9B8BB] break-words'}>
-                      0x2170ed0880ac9a755fd29b2688956bd959f933f8
-                    </span>
-                    <button
-                      onClick={(e) =>
-                        copyToClipboard(
-                          e as unknown as MouseEvent,
-                          '0x2170ed0880ac9a755fd29b2688956bd959f933f8'
-                        )
-                      }
+                  <div className="flex flex-col items-center justify-center gap-[20px]">
+                    <h4>ETHEREUM, POLYGON, BSC, AVALANCHE</h4>
+                    <div
+                      style={{
+                        height: 'auto',
+                        margin: '0 auto',
+                        maxWidth: 300,
+                        width: '100%',
+                      }}
                     >
-                      <svg
-                        width="22"
-                        height="22"
-                        viewBox="0 0 22 22"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <QRCode
+                        size={300}
+                        style={{
+                          height: 'auto',
+                          maxWidth: '100%',
+                          width: '100%',
+                        }}
+                        value={process.env.NEXT_PUBLIC_DONATION_ETH!}
+                        viewBox={`0 0 300 300`}
+                      />
+                    </div>
+                    <div className="flex flex-row items-center gap-[10px] w-full sm-only:flex-wrap justify-center">
+                      <span className={'text-[#B9B8BB] break-words'}>
+                        {process.env.NEXT_PUBLIC_DONATION_ETH!}
+                      </span>
+                      <button
+                        onClick={(e) =>
+                          copyToClipboard(
+                            e as unknown as MouseEvent,
+                            process.env.NEXT_PUBLIC_DONATION_ETH!
+                          )
+                        }
                       >
-                        <path
-                          d="M19 8H10C8.89543 8 8 8.89543 8 10V19C8 20.1046 8.89543 21 10 21H19C20.1046 21 21 20.1046 21 19V10C21 8.89543 20.1046 8 19 8Z"
-                          stroke="#B9B8BB"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M4 14H3C2.46957 14 1.96086 13.7893 1.58579 13.4142C1.21071 13.0391 1 12.5304 1 12V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V4"
-                          stroke="#B9B8BB"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </button>
+                        <svg
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19 8H10C8.89543 8 8 8.89543 8 10V19C8 20.1046 8.89543 21 10 21H19C20.1046 21 21 20.1046 21 19V10C21 8.89543 20.1046 8 19 8Z"
+                            stroke="#B9B8BB"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M4 14H3C2.46957 14 1.96086 13.7893 1.58579 13.4142C1.21071 13.0391 1 12.5304 1 12V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V4"
+                            stroke="#B9B8BB"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-[20px] xl:basis-3/6">
                   <h4>SOLANA</h4>
-                  <img
-                    src="/img/solana-qrcode.png"
-                    alt=""
-                    height={300}
-                    width={300}
-                  />
+                  <div
+                    style={{
+                      height: 'auto',
+                      margin: '0 auto',
+                      maxWidth: 300,
+                      width: '100%',
+                    }}
+                  >
+                    <QRCode
+                      size={300}
+                      style={{
+                        height: 'auto',
+                        maxWidth: '100%',
+                        width: '100%',
+                      }}
+                      value={process.env.NEXT_PUBLIC_DONATION_SOL!}
+                      viewBox={`0 0 300 300`}
+                    />
+                  </div>
                   <div className="flex flex-row items-center gap-[10px]">
                     <span className={'text-[#B9B8BB]'}>
-                      1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71
+                      {process.env.NEXT_PUBLIC_DONATION_SOL!}
                     </span>
                     <button
                       className={'transition-all'}
                       onClick={(e) =>
                         copyToClipboard(
                           e as unknown as MouseEvent,
-                          '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71'
+                          process.env.NEXT_PUBLIC_DONATION_SOL!
                         )
                       }
                     >
