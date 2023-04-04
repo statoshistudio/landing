@@ -219,7 +219,7 @@ const Footer = () => {
                 </p>
                 <div className="mt-6 flex justify-center flex-wrap gap-3">
                   <Link
-                    href="https://twitter.com/satoshisnft"
+                    href={process.env.NEXT_PUBLIC_TWITTER_URL}
                     passHref
                     target={'_blank'}
                   >
