@@ -219,7 +219,7 @@ const Footer = () => {
                 </p>
                 <div className="mt-6 flex justify-center flex-wrap gap-3">
                   <Link
-                    href="https://twitter.com/satoshisnft"
+                    href={process.env.NEXT_PUBLIC_TWITTER_URL as string}
                     passHref
                     target={'_blank'}
                   >
@@ -231,7 +231,8 @@ const Footer = () => {
                     </div>
                   </Link>
                   <Link
-                    href="https://instagram.com/satoshistudio?igshid=YmMyMTA2M2Y="
+ 
+                    href={process.env.NEXT_PUBLIC_INSTAGRAM_URL as string}
                     passHref
                     target={'_blank'}
                   >
@@ -251,7 +252,7 @@ const Footer = () => {
                     </div>
                   </Link> */}
                   <Link
-                    href="https://t.me/SatoshiStudioAnnounce"
+                    href={process.env.NEXT_PUBLIC_TELEGRAM_URL as string}
                     target={'_blank'}
                     passHref
                   >
@@ -271,7 +272,7 @@ const Footer = () => {
                     </div>
                   </Link> */}
                   <Link
-                    href="https://www.tiktok.com/@satoshisnft"
+                    href={process.env.NEXT_PUBLIC_TIKTOK_URL as string}
                     target={'_blank'}
                     passHref
                   >
@@ -283,7 +284,7 @@ const Footer = () => {
                     </div>
                   </Link>
                   <Link
-                    href="https://discord.gg/qbzG3M59nN"
+                    href={process.env.NEXT_PUBLIC_DISCORD_URL as string}
                     target={'_blank'}
                     passHref
                   >
