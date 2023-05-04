@@ -55,7 +55,7 @@ const Header = () => {
                   <li className="mt-2">
                     <Link
                       className="font-dm-sans hover:text-primary"
-                      href={'#'}
+                      href={'https://satoshistudio.io/assets/create'}
                     >
                       Inscribe New Ordinal
                     </Link>
@@ -63,19 +63,19 @@ const Header = () => {
                   <li className="">
                     <Link
                       className="font-dm-sans hover:text-primary"
-                      href={'#'}
+                      href={'https://satoshistudio.io/assets/create'}
                     >
                       Launch Collection
                     </Link>
                   </li>
-                  <li className="">
+                  {/* <li className="">
                     <Link
                       className="font-dm-sans hover:text-primary"
                       href={'#'}
                     >
                       Creator Partnership Program
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li className="px-2">
