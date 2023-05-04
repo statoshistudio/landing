@@ -79,7 +79,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className="px-2">
-                <Link className="hover:text-primary duration-300" href={'/'}>
+                <Link className="hover:text-primary duration-300" href={'https://github.com/statoshistudio'}>
                   Github
                 </Link>
               </li>
