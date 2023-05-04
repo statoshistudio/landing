@@ -82,6 +82,7 @@ const Hero = () => {
                   <span className="text-primary">Bitcoin</span>, the most secure
                   and decentralized Blockchain network
                 </h1>
+                <a href='https://satoshistudio.io/import'>
                 <div className=" sm:w-[424px] bg-primary hover:bg-primary/90 py-2.5 sm:py-4 xl:py-5 pr-[35px] pl-[27px] mt-[56px] mx-auto flex items-center rounded-full cursor-pointer">
                   <div className="pr-7 sm:pr-[33px] py-2">
                     <Etherium />
@@ -90,6 +91,7 @@ const Hero = () => {
                     Inscribe Your Ethereum and Solana NFTs As Ordinals
                   </p>
                 </div>
+                </a>
               </div>
               {/* <div className=" lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-[23px] gap-y-[30px] mt-20 lg:mt-0">
               {networks.map((network, idx) => {

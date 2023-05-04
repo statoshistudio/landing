@@ -121,18 +121,19 @@ const Claim = () => {
         </div>
       </div>
       <div className="mt-20 lg:mt-[105px] text-center lg:flex items-center justify-center">
-        <button className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-primary hover:bg-primary/80 duration-200 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-base 2xl:text-2xl font-bold rounded-full">
+        <a href="https://satoshistudio.io/import" className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-primary hover:bg-primary/80 duration-200 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-base 2xl:text-2xl font-bold rounded-full">
           Inscribe Ordinals Of Your Ethereum and Solana NFTs Now
-        </button>
+        </a>
         <p className="uppercase font-bold text-lg sm:text-xl md:text-2xl lg:text-base text-center my-6 lg:my-0 lg:w-40">
           or
         </p>
-        <button
+        <a
+        href="https://satoshistudio.io/assets/create"
           id="claim-button-2"
           className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-[#904C25] hover:bg-opacity-80 duration-200 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-base 2xl:text-2xl font-bold rounded-full"
         >
           Create A New Ordinal
-        </button>
+        </a>
       </div>
     </div>
   );

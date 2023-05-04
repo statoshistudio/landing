@@ -91,9 +91,9 @@ const Header = () => {
             </ul>
           </nav>
           <div className="flex items-center gap-3">
-            <button className="font-bold text-white py-3 px-10 xl:px-[62px] rounded-full border border-primary bg-[#1F1F2CE5] hover:text-primary duration-300">
+            <a href="https://satoshistudio.io" className="font-bold text-white py-3 px-10 xl:px-[62px] rounded-full border border-primary bg-[#1F1F2CE5] hover:text-primary duration-300">
               Connect
-            </button>
+            </a>
             <div className="group rounded-full border bg-[#1F1F2C] border-[#28303F] hover:border-primary duration-300 px-3 py-3 cursor-pointer">
               <Moon className="text-[#B9B8BB] group-hover:text-primary duration-300" />
             </div>

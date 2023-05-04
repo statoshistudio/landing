@@ -65,7 +65,7 @@ const Recent = () => {
           </p>
         </div>
         <div className="max-w-[144px]">
-          <Link href={'#'} className="text-center">
+          <Link href={'https://satoshistudio.io'} className="text-center">
             <div className="py-2 px-4 flex items-center border border-[#28303F] duration-500 hover:border-primary hover:text-primary rounded-full">
               <p className="text-sm font-bold leading-[22px]">View more</p>{' '}
               {/* <Arrow className="ml-3" /> */}
