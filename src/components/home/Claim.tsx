@@ -121,7 +121,7 @@ const Claim = () => {
         </div>
       </div>
       <div className="mt-20 lg:mt-[105px] text-center lg:flex items-center justify-center">
-        <a href="https://satoshistudio.io/import" className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-primary hover:bg-primary/80 duration-200 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-base 2xl:text-2xl font-bold rounded-full">
+        <a href="https://satoshistudio.io/load" className="px-10 xs:px-14 sm:px-20 md:px-[96px] py-2.5 xs:py-4 sm:py-5 md:py-[27px] bg-primary hover:bg-primary/80 duration-200 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-base 2xl:text-2xl font-bold rounded-full">
           Inscribe Ordinals Of Your Ethereum and Solana NFTs Now
         </a>
         <p className="uppercase font-bold text-lg sm:text-xl md:text-2xl lg:text-base text-center my-6 lg:my-0 lg:w-40">

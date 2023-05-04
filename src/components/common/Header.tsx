@@ -94,9 +94,9 @@ const Header = () => {
             <a href="https://satoshistudio.io" className="font-bold text-white py-3 px-10 xl:px-[62px] rounded-full border border-primary bg-[#1F1F2CE5] hover:text-primary duration-300">
               Connect
             </a>
-            <div className="group rounded-full border bg-[#1F1F2C] border-[#28303F] hover:border-primary duration-300 px-3 py-3 cursor-pointer">
+            {/* <div className="group rounded-full border bg-[#1F1F2C] border-[#28303F] hover:border-primary duration-300 px-3 py-3 cursor-pointer">
               <Moon className="text-[#B9B8BB] group-hover:text-primary duration-300" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -127,22 +127,22 @@ const Header = () => {
           </div>
           <ul onClick={toggleDrawer} className="mt-5 text-lg space-y-2">
             <li className="px-2 hover:text-primary">
-              <Link scroll={false} href={'#marketplace'}>
+              <Link scroll={false} href={'https://satoshistudio.io'}>
                 Marketplace
               </Link>
             </li>
             <li className="px-2 hover:text-primary">
               <Link scroll={false} href={'#claim'}>
-                Claim
+                Claim(coming soon)
               </Link>
             </li>
             <li className="px-2 hover:text-primary">
               <Link scroll={false} href={'#claim'}>
-                Create
+                Create 
               </Link>
             </li>
             <li className="px-2 hover:text-primary">
-              <Link scroll={false} href={'/#github'}>
+              <Link scroll={false} target={'_blank'} href={'/#github'}>
                 Github
               </Link>
             </li>
